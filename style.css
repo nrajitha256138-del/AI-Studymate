@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+/* Main */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px 15px;
+}
+
+/* Hero */
+.hero {
+    background: white;
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Input */
+.input-box {
+    display: flex;
+    gap: 10px;
+    max-width: 650px;
+    margin: auto;
+}
+
+input {
+    flex: 1;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+button {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Results */
+.results {
+    margin-top: 25px;
+    display: grid;
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #172554;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 10px;
+}
+
+/* Quiz Options */
+#options {
+    display: grid;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.option {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #f8fafc;
+}
+
+.option:hover {
+    background: #e0e7ff;
+}
+
+/* Score */
+#score {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #172554;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .input-box {
+        flex-direction: column;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+}
