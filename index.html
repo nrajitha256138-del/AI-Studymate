@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI-StudyMate</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">🎓 AI-StudyMate</div>
+        <p>Your Smart Study Assistant</p>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+
+        <section class="hero">
+            <h1>Study Smarter with AI 🚀</h1>
+
+            <p>
+                Enter a topic and get simple explanations,
+                important questions and MCQs.
+            </p>
+
+            <div class="input-box">
+                <input
+                    type="text"
+                    id="topic"
+                    placeholder="Enter your topic..."
+                >
+
+                <button onclick="generateStudyPack()">
+                    Generate
+                </button>
+            </div>
+        </section>
+
+
+        <!-- Results -->
+        <section id="results" class="results">
+
+            <!-- Explanation -->
+            <div class="card">
+                <h2>📖 Explanation</h2>
+                <p id="explanation">
+                    Your explanation will appear here.
+                </p>
+            </div>
+
+
+            <!-- Important Questions -->
+            <div class="card">
+                <h2>❓ Important Questions</h2>
+
+                <ul id="questions">
+                    <li>Enter a topic to generate questions.</li>
+                </ul>
+            </div>
+
+
+            <!-- MCQ Quiz -->
+            <div class="card">
+                <h2>📝 Quick Quiz</h2>
+
+                <p id="quiz
